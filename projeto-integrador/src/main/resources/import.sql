@@ -1,0 +1,76 @@
+insert into Categoria (nome) values ('Bebidas');
+insert into Categoria (nome) values ('Carnes');
+insert into Categoria (nome) values ('Laticínios');
+insert into Categoria (nome) values ('Hortifruti');
+insert into Categoria (nome) values ('Padaria');
+insert into Categoria (nome) values ('Limpeza');
+insert into Categoria (nome) values ('Congelados');
+insert into Categoria (nome) values ('Doces');
+insert into Categoria (nome) values ('Pet Shop');
+insert into Categoria (nome) values ('Cereais');
+
+insert into Fabricante (nome) values ('JBS');
+insert into Fabricante (nome) values ('The Coca Cola Company');
+insert into Fabricante (nome) values ('Nestlé');
+insert into Fabricante (nome) values ('Ambev');
+insert into Fabricante (nome) values ('Unilever');
+insert into Fabricante (nome) values ('BRF');
+insert into Fabricante (nome) values ('Danone');
+insert into Fabricante (nome) values ('Pepsico');
+insert into Fabricante (nome) values ('Aurora');
+insert into Fabricante (nome) values ('Perdigão');
+
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Coca Cola Lata 2 Litros', 20, 12.50, '2025-12-20', 1, 2);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Guaraná Antarctica 1L', 15, 8.99, '2025-11-10', 1, 4);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Picanha Bovina', 10, 59.90, '2025-09-15', 2, 1);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Leite Integral', 30, 4.50, '2025-10-01', 3, 3);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Queijo Mussarela', 25, 29.90, '2025-09-25', 3, 7);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Alface Crespa', 40, 2.99, '2025-09-05', 4, 8);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Pão Francês', 100, 0.50, '2025-09-03', 5, 5);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Sabão em Pó', 60, 18.90, '2026-01-10', 6, 5);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Salsicha Congelada', 50, 12.00, '2025-12-01', 7, 6);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Chocolate ao Leite', 80, 6.50, '2026-02-15', 8, 3);
+
+insert into Funcionario (codigo, nome, gerente_codigo) values (3, 'Ana', 1);
+insert into Funcionario (codigo, nome, gerente_codigo) values (4, 'Rafael', 2);
+insert into Funcionario (codigo, nome, gerente_codigo) values (5, 'Carlos', 1);
+insert into Funcionario (codigo, nome, gerente_codigo) values (6, 'Fernanda', 2);
+insert into Funcionario (codigo, nome, gerente_codigo) values (7, 'Lucas', 3);
+insert into Funcionario (codigo, nome, gerente_codigo) values (8, 'Juliana', 4);
+insert into Funcionario (codigo, nome, gerente_codigo) values (9, 'Paulo', 5);
+insert into Funcionario (codigo, nome, gerente_codigo) values (10, 'Marina', 6);
+insert into Funcionario (codigo, nome, gerente_codigo) values (11, 'Bruno', 7);
+insert into Funcionario (codigo, nome, gerente_codigo) values (12, 'Patrícia', 8);
+
+insert into Cliente (nome, cpf) values ('João Silva', '123.456.789-00');
+insert into Cliente (nome, cpf) values ('Maria Oliveira', '987.654.321-00');
+insert into Cliente (nome, cpf) values ('Carlos Souza', '111.222.333-44');
+insert into Cliente (nome, cpf) values ('Fernanda Lima', '555.666.777-88');
+insert into Cliente (nome, cpf) values ('Lucas Pereira', '999.888.777-66');
+insert into Cliente (nome, cpf) values ('Juliana Costa', '444.333.222-11');
+insert into Cliente (nome, cpf) values ('Paulo Mendes', '222.333.444-55');
+insert into Cliente (nome, cpf) values ('Marina Rocha', '666.555.444-33');
+insert into Cliente (nome, cpf) values ('Bruno Dias', '888.777.666-55');
+insert into Cliente (nome, cpf) values ('Patrícia Ramos', '333.222.111-00');
+
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-01', 25.00, 1, 3);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-02', 50.00, 2, 4);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-03', 15.00, 3, 5);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-04', 80.00, 4, 6);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-05', 120.00, 5, 7);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-06', 35.00, 6, 8);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-07', 60.00, 7, 9);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-08', 22.00, 8, 10);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-09', 45.00, 9, 11);
+insert into Venda (data, total, cliente_codigo, funcionario_codigo) values ('2024-10-10', 75.00, 10, 12);
+
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (2, 12.50, 1, 1);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (4, 12.50, 1, 2);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (1, 8.99, 2, 3);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (2, 59.90, 3, 4);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (3, 4.50, 4, 5);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (2, 29.90, 5, 6);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (5, 2.99, 6, 7);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (10, 0.50, 7, 8);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (2, 18.90, 8, 9);
+insert into ItemVenda (quantidade, preco, produto_codigo, venda_codigo) values (3, 6.50, 10, 10);
